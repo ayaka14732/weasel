@@ -127,22 +127,22 @@ program_files:
   File "curl-ca-bundle.crt"
   File "rime-install.bat"
   File "rime-install-config.bat"
-  File "weasel.dll"
-  ${If} ${RunningX64}
+  ;File "weasel.dll"
+  ;${If} ${RunningX64}
     File "weaselx64.dll"
-  ${EndIf}
-  File "weaselt.dll"
-  ${If} ${RunningX64}
+  ;${EndIf}
+  ;File "weaselt.dll"
+  ;${If} ${RunningX64}
     File "weaseltx64.dll"
-  ${EndIf}
-  File "weasel.ime"
-  ${If} ${RunningX64}
+  ;${EndIf}
+  ;File "weasel.ime"
+  ;${If} ${RunningX64}
     File "weaselx64.ime"
-  ${EndIf}
-  File "weaselt.ime"
-  ${If} ${RunningX64}
+  ;${EndIf}
+  ;File "weaselt.ime"
+  ;${If} ${RunningX64}
     File "weaseltx64.ime"
-  ${EndIf}
+  ;${EndIf}
   File "WeaselDeployer.exe"
   File "WeaselServer.exe"
   File "WeaselSetup.exe"
