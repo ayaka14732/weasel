@@ -113,10 +113,12 @@ if %build_rime% == 1 (
     call build.bat thirdparty %rime_build_variant%
     if errorlevel 1 goto error
   )
-  call build.bat %rime_build_variant%
+  call build.bat boost %rime_build_variant%
+  call build.bat thirdparty %rime_build_variant%
+  call build.bat librime %rime_build_variant%
   if errorlevel 1 goto error
 
-cd %WEASEL_ROOT%
+  cd %WEASEL_ROOT%
   copy /Y librime\dist\include\rime_*.h include\
   if errorlevel 1 goto error
   copy /Y librime\dist\lib\rime.lib lib\
